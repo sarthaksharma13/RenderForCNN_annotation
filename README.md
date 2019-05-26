@@ -27,8 +27,12 @@ However as this is the data annotation pipeline which generates 3 views to be an
 5. In the file **render_pipeline/render_helper_keypoints.py**:
   - view_num : Ensure the number of images to be generated per model is stated as **3** for the purpose.
 
-6. Go to the **'/data/view_distribution'**, which contains the parameters of the camera as you want while generating the synthetic images. PLease specify the parameters you want your images to be synthesized with.
-
+6. Go to the **'/data/view_distribution'**, which contains the parameters of the camera as you want while generating the synthetic images. **Please smanually pecify the parameters you want your images to be synthesized with.** In the current **data/view_distribution/Auto.txt** we have used the following parameters:
+  - Azimuth: 65,90,115
+  - Elevation: 0, 0, 0
+  - Tilt: 0, 0, 0
+  - Distance: 1.5, 1.5, 1.5
+ 
 7. Run **python run_render_keypoints.py** in the **'render_pipeline' directory'**. This would generate synthetic images without any truncation or background overlaying at the address set in the **g_syn_images_folder** variable present in the **global_variables.py**.
 
 

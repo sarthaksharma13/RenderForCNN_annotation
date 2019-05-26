@@ -8,8 +8,16 @@ This is a modification of the original paper to cater to our needs for our  IROS
 The steps to run are present in https://github.com/sarthaksharma13/RenderForCNN_KeypointGeneration/Readme.txt. Advise is to go through that first. 
 However as this is the data annotation pipeline which generates 3 views to be annotated. The sample views are present in data/view_distribution/Auto.txt
 ## Purpose Of the Pipeline:
+
 This pipeline is a core part of the IROS18 paper. This pipeline is used to generate images of ShapeNet or other CAD Models for 3 specific views, the views depend upon the camera parameters specified by the user. The camera parameters namely are the **Azimuth, Elevation, Tilt and the Distance of the camera**. 
- 
+
+## Dependencies:
+
+1. Blender.
+2. MATLAB.
+3. Python.
+4. ShapeNet CAD Models(by default) or custom CAD Models.
+
 ## Steps to run the pipeline :
 
 1. In the file **setup.py**, change the **class** to the class you want to generate the images for.

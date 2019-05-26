@@ -7,7 +7,9 @@ This is a modification of the original paper to cater to our needs for our  IROS
 
 The steps to run are present in https://github.com/sarthaksharma13/RenderForCNN_KeypointGeneration/Readme.txt. Advise is to go through that first. 
 However as this is the data annotation pipeline which generates 3 views to be annotated. The sample views are present in data/view_distribution/Auto.txt
-
+## Purpose Of the Pipeline:
+This pipeline is a core part of the IROS18 paper. This pipeline is used to generate images of ShapeNet or other CAD Models for 3 specific views, the views depend upon the camera parameters specified by the user. The camera parameters namely are the **Azimuth, Elevation, Tilt and the Distance of the camera**. 
+ 
 ## Steps to run the pipeline :
 
 1. In the file **setup.py**, change the **class** to the class you want to generate the images for.
@@ -27,7 +29,7 @@ However as this is the data annotation pipeline which generates 3 views to be an
 5. In the file **render_pipeline/render_helper_keypoints.py**:
   - view_num : Ensure the number of images to be generated per model is stated as **3** for the purpose.
 
-6. Go to the **'/data/view_distribution'**, which contains the parameters of the camera as you want while generating the synthetic images. **Please smanually pecify the parameters you want your images to be synthesized with.** In the current **data/view_distribution/Auto.txt** we have used the following parameters:
+6. Go to the **'/data/view_distribution'**, which contains the parameters of the camera as you want while generating the synthetic images. **Please manually specify the parameters you want your images to be synthesized with.** In the current **data/view_distribution/Auto.txt** we have used the following parameters:
   - Azimuth: 65,90,115
   - Elevation: 0, 0, 0
   - Tilt: 0, 0, 0
@@ -36,4 +38,4 @@ However as this is the data annotation pipeline which generates 3 views to be an
 7. Run **python run_render_keypoints.py** in the **'render_pipeline' directory'**. This would generate synthetic images without any truncation or background overlaying at the address set in the **g_syn_images_folder** variable present in the **global_variables.py**.
 
 
-For details contact : Sarthak Sharma(sarthak.alexrider@gmail.com), Junaid Ahmed Ansari(ansariahmedjunaid@gmail.com )
+For details contact : Sarthak Sharma(sarthak.alexrider@gmail.com), Junaid Ahmed Ansari(ansariahmedjunaid@gmail.com ), Pratyush Kumar Sahoo(pratyushk.sahoo.min16@itbhu.ac.in)

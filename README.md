@@ -8,7 +8,7 @@ This is a modification of the original paper to cater to our needs for our  IROS
 The steps to run are present in https://github.com/sarthaksharma13/RenderForCNN_KeypointGeneration/Readme.txt. Advise is to go through that first. 
 However as this is the data annotation pipeline which generates 3 views to be annotated. The sample views are present in data/view_distribution/Auto.txt
 
-#Steps to run the pipeline :
+## Steps to run the pipeline :
 
 1. In the file **setup.py**, change the **class** to the class you want to generate the images for.
 

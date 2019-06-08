@@ -1,4 +1,4 @@
-WWnder for CNN: the rendering pipeline
+Render for CNN: the rendering pipeline
 
 Three stages:
  - Render synthetic images of objects through overfit-resistant rendering, see `render_model_views.py`

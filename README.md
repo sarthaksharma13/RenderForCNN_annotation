@@ -20,7 +20,7 @@ This pipeline is a core part of the IROS18 paper. This pipeline is used to gener
 
 ## Steps to run the pipeline :
 
-1. In the file **setup.py**, change the **class** to the class you want to generate the images for.
+1. Run **setup.py** after changing the appropriate path variables.
 
 2. In the file **global_varaibles.m**, change the **class** to the class you want to generate the images for.
 
@@ -43,7 +43,7 @@ This pipeline is a core part of the IROS18 paper. This pipeline is used to gener
   - Tilt: 0, 0, 0
   - Distance: 1.5, 1.5, 1.5
  
-7. Run **python run_render_keypoints.py** in the **'render_pipeline' directory'**. This would generate synthetic images without any truncation or background overlaying at the address set in the **g_syn_images_folder** variable present in the **global_variables.py**.
+7. Run **python run_render.py** in the **'render_pipeline' directory'**. This would generate synthetic images without any truncation or background overlaying at the address set in the **g_syn_images_folder** variable present in the **global_variables.py**.
 
 
 For details contact : Sarthak Sharma(sarthak.alexrider@gmail.com), Junaid Ahmed Ansari(ansariahmedjunaid@gmail.com ), Pratyush Kumar Sahoo(pratyushk.sahoo.min16@itbhu.ac.in)

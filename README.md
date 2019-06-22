@@ -33,8 +33,7 @@ This pipeline is a core part of the IROS18 paper. This pipeline is used to gener
   
 4. In the file **render_pipeline/run_render_keypoints.py**:
   - no change.
-
-4.1 Run **makemex** file in MATLAB, present in the render_pipeline/kde/matlab_kde_package/mex/. 
+  - Run **makemex** file in MATLAB, present in the render_pipeline/kde/matlab_kde_package/mex/. The mex file builds all the dependencies for next steps!
   
 5. In the file **render_pipeline/render_helper_keypoints.py**:
   - view_num : Ensure the number of images to be generated per model is stated as **3** for the purpose.
